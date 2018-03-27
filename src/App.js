@@ -5,13 +5,13 @@ import SearchResult from './Component/Controller/SearchResult'
 import Menu from './Component/UI/Menu'
 import RouteComp from './Component/UI/RouterCom' */
 import { Home,About } from "./Component/UI/home";
-import { BrowserRouter as Router, Switch, Route, NavLink, hashHistory} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink} from 'react-router-dom';
 import SearchResult from "./Component/Controller/SearchResult";
 class App extends Component {
   render() {
     return (
       <div>      
-        <Router history={hashHistory}>
+        <Router >
           <div style={{ width: 1000, margin: '0 auto' }}>
             <ul>
               <li><NavLink to='/'>Home</NavLink></li>
